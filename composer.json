@@ -1,0 +1,18 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "johnpbloch/wordpress": "4.5.3"
+    },
+    "require-dev": {
+        "laravel/homestead": "^3.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp"
+    }
+}

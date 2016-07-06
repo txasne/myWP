@@ -1,0 +1,36 @@
+---
+ip: "192.168.10.10"
+memory: 512
+cpus: 1
+hostname: mywp
+name: mywp
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "/Users/txasne/PhpstormProjects/myWP"
+      to: "/home/vagrant/mywp"
+
+sites:
+    - map: mywp.app
+      to: "/home/vagrant/mywp"
+
+databases:
+    - wordpress
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
